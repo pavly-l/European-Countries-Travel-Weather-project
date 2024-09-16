@@ -1,0 +1,145 @@
+/* master.css */
+* {
+    box-sizing: border-box;
+}
+/* General Styles */
+body {
+    font-family: 'Roboto',Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    padding: 20px 0; /* Added padding for better spacing */
+    background-color: #f8f9fa; /* Light background color */
+    border-bottom: 1px solid #ddd; /* Subtle border at the bottom */
+    width: 100vw;
+}
+
+header h1 {
+    font-size: 2.5em; /* Adjusted font size */
+    color: #333; /* Dark text color */
+    margin: 0; /* Remove default margin */
+    padding: 10px 0; /* Added padding for better spacing */
+}
+
+.header-image {
+    width: 20vw;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Subtle border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+.header-image:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.header-image:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.section-subheading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path fill="%23333" d="M0 0l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Weather Info Container */
+.weather-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr) );
+    grid-auto-rows: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+    margin-bottom: 20px;
+}
+
+.weather-day {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.weather-day:last-child {
+    border-bottom: none;
+}
+
+.weather-day h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.weather-day p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.weather-day p:first-child {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+}
+
+.copyright-text {
+    margin: 0;
+    font-size: 14px;
+}
